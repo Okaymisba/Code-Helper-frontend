@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analyzer</title>
     <link rel="stylesheet" href="analyzer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.css"
+        rel="stylesheet">
 </head>
+
 <body>
+
     <div class="container">
         <h1>Top-Level Code</h1>
-        <pre id="codeContainer" class="code-block"></pre>
+        <pre id="codeContainer" class="code-block line-numbers"><code class="language-javascript"></code></pre>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.js"></script>
     <script src="analyzer.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const codeContainer = document.getElementById('codeContainer');
+    const codeContainer = document.getElementById('codeContainer').querySelector('code');
     const topLevelCode = localStorage.getItem('topLevelCode');
 
     if (topLevelCode) {
