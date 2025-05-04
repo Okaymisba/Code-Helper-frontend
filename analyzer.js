@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (topLevelCode) {
         codeContainer.textContent = topLevelCode;
+        Prism.highlightElement(codeContainer);
     } else {
         codeContainer.textContent = 'No code available. Please go back and analyze a repository.';
     }
