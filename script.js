@@ -13,6 +13,8 @@ document.getElementById('repoForm').addEventListener('submit', async function (e
         });
 
         if (response.ok) {
+            const responseData = await response.json();
+            localStorage.setItem('topLevelCode', responseData.topLevelCode);
             window.location.href = 'analyzer.html';
         } else {
             const errorData = await response.json();
