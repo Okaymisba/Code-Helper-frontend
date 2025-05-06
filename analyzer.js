@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const lineInfo = document.getElementById('lineInfo');
     const lineDetails = document.getElementById('lineDetails');
     const topLevelCode = localStorage.getItem('topLevelCode');
+    const functions = JSON.parse(localStorage.getItem('functions'));
 
     if (topLevelCode) {
         codeContainer.textContent = topLevelCode;
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchLineInfo(lineNumber) {
-        fetch(`http://127.0.0.1:8000/api`, {
+        fetch(`http://127.0.0.1:8000/lineinfo`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
