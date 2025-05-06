@@ -15,7 +15,14 @@
 
     <div class="container">
         <h1>Top-Level Code</h1>
-        <pre id="codeContainer" class="code-block line-numbers"><code class="language-python"></code></pre>
+        <div style="display: flex;">
+            <pre id="codeContainer" class="code-block line-numbers"><code class="language-python"></code></pre>
+            
+            <div id="lineInfo" class="line-info" style="margin-left: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 8px; background: #f9f9f9; width: 30%; display: none;">
+                <h3>Line Info</h3>
+                <p id="lineDetails">Click on a line to see details.</p>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>

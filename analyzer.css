@@ -31,3 +31,9 @@ body {
     white-space: pre-wrap;
     border: 1px solid #ddd;
 }
+
+.line-info {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
